@@ -1,0 +1,52 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background: #f4f4f4;
+}
+
+.header {
+  background: #28a745;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 28px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-check:checked + .btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.result {
+  background: black;
+  color: white;
+  font-size: 20px;
+  border-radius: 5px;
+}
+.img {
+  background: url("house.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-size: 100% 100%;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(15px);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}

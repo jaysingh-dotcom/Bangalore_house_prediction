@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bangalore House Price Prediction</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="img"></div>
+    <header class="header fade-in">
+      <h1 class="text-center">Bangalore House Price Prediction</h1>
+    </header>
+
+    <div class="container mt-5">
+      <div class="card p-4 slide-up">
+        <form>
+          <div class="mb-3">
+            <label class="form-label">Enter Area (Sq. Feet)</label>
+            <input
+              type="number"
+              id="uiSqft"
+              class="form-control input-animate"
+              placeholder="Enter area in square feet"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Select BHK</label>
+            <div id="uiBHK" class="btn-group animate-btns" role="group">
+              <input
+                type="radio"
+                class="btn-check"
+                name="uiBHK"
+                id="bhk1"
+                value="1"
+              />
+              <label class="btn btn-outline-primary" for="bhk1">1</label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="uiBHK"
+                id="bhk2"
+                value="2"
+                checked
+              />
+              <label class="btn btn-outline-primary" for="bhk2">2</label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="uiBHK"
+                id="bhk3"
+                value="3"
+              />
+              <label class="btn btn-outline-primary" for="bhk3">3</label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="uiBHK"
+                id="bhk4"
+                value="4"
+              />
+              <label class="btn btn-outline-primary" for="bhk4">4</label>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Select Bathrooms</label>
+            <div id="uiBathrooms" class="btn-group animate-btns" role="group">
+              <input
+                type="radio"
+                class="btn-check"
+                name="uiBathrooms"
+                id="bath1"
+                value="1"
+              />
+              <label class="btn btn-outline-primary" for="bath1">1</label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="uiBathrooms"
+                id="bath2"
+                value="2"
+                checked
+              />
+              <label class="btn btn-outline-primary" for="bath2">2</label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="uiBathrooms"
+                id="bath3"
+                value="3"
+              />
+              <label class="btn btn-outline-primary" for="bath3">3</label>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Choose Location</label>
+            <select id="uiLocations" class="form-select input-animate">
+              <option disabled selected>Select a Location</option>
+            </select>
+          </div>
+
+          <button
+            type="button"
+            class="btn btn-success w-100 btn-animate"
+            onclick="onClickedEstimatePrice()"
+          >
+            Estimate Price
+          </button>
+        </form>
+
+        <div class="result mt-4 p-3 text-center fade-in" id="uiEstimatedPrice">
+          <h2>Estimated Price: -</h2>
+        </div>
+      </div>
+    </div>
+    <!-- Smiley and Flickering Text at the Bottom -->
+    <div class="bottom-container">
+      <div class="smiley">😊</div>
+      <div class="flicker-text">
+        Here You Get Best Price Prediction of the house with 92% accuracy
+      </div>
+    </div>
+  </body>
+</html>

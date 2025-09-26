@@ -1,0 +1,47 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background: #f4f4f4;
+}
+
+.header {
+  background: #28a745;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 28px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-check:checked + .btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.result {
+  background: black;
+  color: white;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.loading-spinner {
+  display: none;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.chart-container {
+  margin-top: 30px;
+  width: 100%;
+  height: 300px;
+}
